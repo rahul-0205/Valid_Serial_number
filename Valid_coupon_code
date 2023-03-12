@@ -1,0 +1,9 @@
+def solve(s):
+    l=['10','20','50','100','200','500','1000']
+    year=[str(i) for i in range(1900,2020)]
+    if s[0:3].isupper() and s[3:7] in year and s[7:9] in l and s[-1].isupper():
+        return s[0]
+    else:
+        return s[-1]
+s=input()
+print(solve(s))
